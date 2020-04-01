@@ -17,14 +17,15 @@ if __name__ == '__main__':
     print(all_field)
 ```
 
-> You can pass your source as ThaiCovid19 argument. <br><br>
-> Default source is "covid19.th-stat.com" <br><br> 
-> Get api based on your source field. e.g.
-> - today
-> - timeline
-> - cases
-> - cases_sum
-> - area
+**You can pass your source to the constructor 
+also you will need to somehow register api in config.py** <br><br>
+ **Default source is "covid19.th-stat.com"** <br><br> 
+ Get api based on your source field. e.g.
+ - today
+ - timeline
+ - cases
+ - cases_sum
+ - area
 
 > requests.get is used so you can pass kwargs as documented at https://requests.readthedocs.io/en/master/user/quickstart/
 

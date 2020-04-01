@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 
 
-with open('README.md', 'r') as readme, open('requirements.txt', 'r') as requirements:
+with open('README.md', 'r') as readme, open('production_requirements.txt', 'r') as dependencies:
     long_description = readme.read()
-    dependencies = requirements.read()
+    dependencies = dependencies.read()
 
     kwargs = {
         'name': 'covid19-open-api',
-        'version': '0.0.3',
+        'version': '0.0.11',
         'author': 'Natworpong Loyswai',
         'author_email': 'Natworpong.Loyswai@mail.kmutt.ac.th',
         'description': 'Thai Covid-19 status',
@@ -16,9 +16,7 @@ with open('README.md', 'r') as readme, open('requirements.txt', 'r') as requirem
         'url': 'https://github.com/rsxss/covid19-open-api',
         'packages': find_packages(),
         'classifiers': [
-            'Programming Language :: Python :: 3',
-            'License :: OSI Approved :: MIT License',
-            'Operating System :: OS Independent',
+            'Programming Language :: Python :: 3'
         ],
         'keywords': ['covid19'],
         'install_requires': dependencies
